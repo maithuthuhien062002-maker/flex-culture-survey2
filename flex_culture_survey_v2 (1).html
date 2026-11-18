@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>소셜 미디어 속 ‘플렉스’ 문화 설문조사</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#f5f6f8;color:#202124;font-family:Arial,"Noto Sans KR","Malgun Gothic",sans-serif;line-height:1.6}
+.wrap{max-width:760px;margin:auto;padding:28px 16px 60px}
+.card{background:#fff;border-radius:18px;padding:25px;margin:15px 0;box-shadow:0 3px 15px rgba(0,0,0,.06)}
+h1{font-size:28px;line-height:1.35;margin:0 0 18px}
+h2{font-size:19px;margin:0 0 20px}
+.intro{color:#555}
+.core{background:#f1f3f5;border-left:4px solid #202124;padding:15px 18px;border-radius:9px;margin:20px 0}
+.core strong{display:block;margin-bottom:5px}
+.note{font-size:13px;color:#777}
+.q{padding:0 0 24px;margin-bottom:24px;border-bottom:1px solid #eee}
+.q:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}
+.qt{font-weight:700;margin-bottom:11px}
+label{display:block;padding:9px 11px;margin:4px 0;border-radius:9px;cursor:pointer}
+label:hover{background:#f6f7f8}
+input{margin-right:8px}
+.scale{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.scale label{text-align:center;border:1px solid #e0e2e5;font-size:13px}
+.scale input{display:block;margin:0 auto 5px}
+textarea{width:100%;min-height:110px;border:1px solid #d6d8dc;border-radius:9px;padding:11px;font:inherit}
+button{width:100%;padding:14px;border:0;border-radius:11px;background:#202124;color:white;font-size:16px;font-weight:700;cursor:pointer}
+.hidden{display:none}
+.success{display:none;margin-top:14px;padding:14px;background:#eef7ee;border:1px solid #cde3cd;border-radius:10px;color:#245b24}
+@media(max-width:560px){h1{font-size:23px}.card{padding:20px 17px}.scale{grid-template-columns:1fr}.scale label{text-align:left}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="card">
+<h1>소셜 미디어 속 ‘플렉스’ 문화 설문조사</h1>
+<p class="intro">안녕하세요. 본 설문조사는 <b>소셜 미디어 속 ‘플렉스’ 문화가 대학생에게 어떤 영향을 주는지</b> 알아보기 위한 조사입니다.</p>
+<div class="core">
+<strong>핵심 질문</strong>
+소셜 미디어의 플렉스 문화는 대학생에게 발전의 원동력이 될까, 아니면 비교와 열등감의 원인이 될까?
+</div>
+<p class="intro">여기서 ‘플렉스’란 자신의 <b>성취, 돈, 물건, 여행 등을 소셜 미디어에서 보여주는 행동</b>을 의미합니다.</p>
+<p class="note">이름, 학번, 이메일은 수집하지 않습니다. 최근 4주 동안의 경험을 기준으로 답해 주세요.</p>
+</div>
+
+<form id="survey">
+
+<div class="card">
+<h2>Ⅰ. 플렉스 문화 인지</h2>
+
+<div class="q">
+<div class="qt">1. ‘플렉스’라는 말을 알고 있나요? *</div>
+<label><input type="radio" name="q1" value="잘 알고 있다" required>① 잘 알고 있다</label>
+<label><input type="radio" name="q1" value="어느 정도 알고 있다">② 어느 정도 알고 있다</label>
+<label><input type="radio" name="q1" value="들어본 적이 있다">③ 들어본 적이 있다</label>
+<label><input type="radio" name="q1" value="잘 모른다">④ 잘 모른다</label>
+</div>
+
+<div class="q">
+<div class="qt">2. 플렉스 콘텐츠를 무엇이라고 생각하나요? *</div>
+<label><input type="checkbox" name="q2" value="비싼 물건이나 명품">① 비싼 물건이나 명품을 보여주는 콘텐츠</label>
+<label><input type="checkbox" name="q2" value="여행이나 좋은 생활">② 여행이나 좋은 생활 모습을 보여주는 콘텐츠</label>
+<label><input type="checkbox" name="q2" value="성공이나 성취">③ 자신의 성공이나 성취를 보여주는 콘텐츠</label>
+<label><input type="checkbox" name="q2" value="돈이나 재산">④ 돈이나 재산을 자랑하는 콘텐츠</label>
+<label><input type="checkbox" name="q2" value="특별한 경험이나 생활">⑤ 자신의 특별한 경험이나 생활을 보여주는 콘텐츠</label>
+<label><input type="checkbox" name="q2" value="재미나 유머">⑥ 재미나 유머를 통해 자신을 표현하는 콘텐츠</label>
+<label><input type="checkbox" name="q2" value="잘 모르겠다">⑦ 잘 모르겠다</label>
+<p class="note">※ ‘잘 모르겠다’를 선택하면 다른 항목은 선택하지 않습니다.</p>
+</div>
+</div>
+
+<div class="card">
+<h2>Ⅱ. 최근 4주 동안의 이용</h2>
+
+<div class="q">
+<div class="qt">3. 최근 4주 동안 플렉스 콘텐츠를 본 적이 있나요? *</div>
+<label><input type="radio" name="q3" value="자주 봤다" required>① 자주 봤다</label>
+<label><input type="radio" name="q3" value="가끔 봤다">② 가끔 봤다</label>
+<label><input type="radio" name="q3" value="거의 보지 않았다">③ 거의 보지 않았다</label>
+<label><input type="radio" name="q3" value="전혀 보지 않았다">④ 전혀 보지 않았다 → 4~5번 건너뛰기</label>
+</div>
+
+<div id="useQuestions">
+<div class="q">
+<div class="qt">4. 최근 4주 동안 플렉스 콘텐츠를 가장 많이 본 소셜 미디어는 무엇인가요? *</div>
+<label><input type="radio" name="q4" value="Instagram">① Instagram</label>
+<label><input type="radio" name="q4" value="TikTok">② TikTok</label>
+<label><input type="radio" name="q4" value="YouTube">③ YouTube</label>
+<label><input type="radio" name="q4" value="Facebook">④ Facebook</label>
+<label><input type="radio" name="q4" value="X">⑤ X(트위터)</label>
+<label><input type="radio" name="q4" value="기타">⑥ 기타</label>
+<label><input type="radio" name="q4" value="모름">⑦ 잘 모르겠다</label>
+</div>
+
+<div class="q">
+<div class="qt">5. 최근 4주 동안 본 플렉스 콘텐츠 중 가장 관심이 있었던 내용은 무엇인가요? *</div>
+<label><input type="checkbox" name="q5" value="패션·명품">① 패션·명품</label>
+<label><input type="checkbox" name="q5" value="여행">② 여행</label>
+<label><input type="checkbox" name="q5" value="음식·맛집">③ 음식·맛집</label>
+<label><input type="checkbox" name="q5" value="자동차·전자제품">④ 자동차·전자제품</label>
+<label><input type="checkbox" name="q5" value="학업·취업 성공">⑤ 학업·취업 성공</label>
+<label><input type="checkbox" name="q5" value="돈·재테크">⑥ 돈·재테크</label>
+<label><input type="checkbox" name="q5" value="기타">⑦ 기타</label>
+</div>
+</div>
+</div>
+
+<div class="card">
+<h2>Ⅲ. 플렉스 문화에 대한 생각</h2>
+
+<div class="q">
+<div class="qt">6. 플렉스 콘텐츠를 보면 나도 더 열심히 해야겠다는 생각이 듭니다. *</div>
+<div class="scale">
+<label><input type="radio" name="q6" value="1" required>①<br>전혀 그렇지 않다</label>
+<label><input type="radio" name="q6" value="2">②<br>그렇지 않다</label>
+<label><input type="radio" name="q6" value="3">③<br>보통이다</label>
+<label><input type="radio" name="q6" value="4">④<br>그렇다</label>
+<label><input type="radio" name="q6" value="5">⑤<br>매우 그렇다</label>
+</div>
+</div>
+
+<div class="q">
+<div class="qt">7. 플렉스 콘텐츠를 보면 다른 사람과 나를 비교하게 됩니다. *</div>
+<div class="scale">
+<label><input type="radio" name="q7" value="1" required>①<br>전혀 그렇지 않다</label>
+<label><input type="radio" name="q7" value="2">②<br>그렇지 않다</label>
+<label><input type="radio" name="q7" value="3">③<br>보통이다</label>
+<label><input type="radio" name="q7" value="4">④<br>그렇다</label>
+<label><input type="radio" name="q7" value="5">⑤<br>매우 그렇다</label>
+</div>
+</div>
+
+<div class="q">
+<div class="qt">8. 플렉스 문화에 대해 어떻게 생각하나요?</div>
+<textarea name="q8" placeholder="짧게 자유롭게 작성해 주세요."></textarea>
+</div>
+</div>
+
+<div class="card">
+<button type="submit">설문 제출</button>
+<div id="success" class="success">응답이 입력되었습니다. 이 파일은 현재 서버에 연결되어 있지 않아 실제 응답 데이터는 저장되지 않습니다.</div>
+</div>
+
+</form>
+</div>
+
+<script>
+const q1=document.querySelectorAll('input[name="q1"]');
+const q3=document.querySelectorAll('input[name="q3"]');
+const use=document.getElementById('useQuestions');
+
+function skipUse(){
+  const no=document.querySelector('input[name="q3"]:checked')?.value==='전혀 보지 않았다';
+  use.classList.toggle('hidden',no);
+  if(no) use.querySelectorAll('input').forEach(x=>x.checked=false);
+}
+q3.forEach(x=>x.addEventListener('change',skipUse));
+
+document.querySelectorAll('input[name="q2"]').forEach(x=>{
+  x.addEventListener('change',()=>{
+    const boxes=[...document.querySelectorAll('input[name="q2"]')];
+    const unknown=boxes.find(b=>b.value==='잘 모르겠다');
+    if(x.value==='잘 모르겠다' && x.checked) boxes.filter(b=>b!==unknown).forEach(b=>b.checked=false);
+    if(x.value!=='잘 모르겠다' && x.checked) unknown.checked=false;
+  });
+});
+
+document.getElementById('survey').addEventListener('submit',e=>{
+  e.preventDefault();
+  const q3v=document.querySelector('input[name="q3"]:checked')?.value;
+  if(q3v==='전혀 보지 않았다') use.querySelectorAll('input').forEach(x=>x.checked=false);
+  document.getElementById('success').style.display='block';
+});
+</script>
+</body>
+</html>
